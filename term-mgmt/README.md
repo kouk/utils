@@ -9,4 +9,4 @@ Connect to a `tmux` session (optionally specifying the window). On exit cycle th
 `tmuxsel`
 ----------
 
-List availablet tmux windows, and connect to one. Optionally may use `tmxcycle`.
+List availablet `tmux` windows, and connect to one. Optionally may use `tmxcycle`.
