@@ -1,9 +1,9 @@
-#!/usr/local/bin/ksh93
+#!/usr/bin/env ksh93
 
 tmxcycle ( ) {
      # if no session is started, start a new session
-     if [ -x /usr/local/bin/tmux -a -z "${TMUX}" ]; then
-         bintmux=/usr/local/bin/tmux
+     bintmux=$(which tmux)
+     if [ -x $bintmux -a -z "${TMUX}" ]; then
          if [ $# -gt 1 ] ; then
              session_name=$1
              selectw="selectw -t $2"
